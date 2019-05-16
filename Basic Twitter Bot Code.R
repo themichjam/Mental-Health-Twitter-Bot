@@ -9,16 +9,16 @@ install.packages("twitteR")
 library("twitteR")
 
 #REPLACE '####' with the appropriate values from your twitter app
-consumerKey='TUF79oTK76OyzbWNfsjUX2hyO'
-consumerSecret='XPmDEuuIInI4UfEPsdSYtFKb2zdZ7XUT47fwOMM78Tm3A1B4rq'
-accessToken='995341205193089026-HXgTDeu1ETXrvqq2vZJZcdxRN1rtyZo'
-accessTokenSecret= 'iLmyfARlBGjdYche8bwpZcPJFj0t3m9PpQtr9SmEEalIW'
+consumerKey='####'
+consumerSecret='####'
+accessToken='####'
+accessTokenSecret= '####'
 
 #Connect to twitter
 setup_twitter_oauth(consumerKey,consumerSecret,accessToken,accessTokenSecret)
 
 #Extract Tweets !
-searchTwitter("mentalhealth", n=3, lang="en")
+searchTwitter("#HERE", n=3, lang="en")
 
 #Post Tweet !
 tweet("A tweet!")
